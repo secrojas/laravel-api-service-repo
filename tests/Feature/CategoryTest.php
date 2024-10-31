@@ -13,6 +13,6 @@ it('can list categories', function () {
     $response = $this->getJson('/api/categories');
 
     $response->assertStatus(200)
-        ->assertJsonCount(3, 'data');    
-
+        ->assertJsonCount(3, 'data');
 });
+
